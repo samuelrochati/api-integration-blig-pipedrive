@@ -1,0 +1,8 @@
+# Yarn/NPM
+node_modules
+
+# Build
+dist
+
+# Environment
+.env

@@ -1,0 +1,57 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Documentação para utilização da Doc Api – LinkApi.",
+    "version": "1.0.0",
+    "title": "Doc Api – LinkApi",
+    "contact": {
+      "email": "samuelrocha.ti@hotmail.com"
+    }
+  },
+  "host": "localhost:8091",
+  "basePath": "/api/v1",
+  "tags": [
+    {
+      "name": "consolidado",
+      "description": ""
+    }
+  ],
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "paths": {
+    "/consolidado": {
+      "get": {
+        "tags": [
+          "consolidado"
+        ],
+        "summary": "Lista opotunidades consolidadas por dia",
+        "description": "Endpoint para trazer os dados consolidados(oportunidades inseridas no Bling por dia e valor total).",
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "ApiResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string"
+        },
+        "statusCode": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "data": {
+          "type": "any"
+        }
+      }
+    }
+  }
+}
+

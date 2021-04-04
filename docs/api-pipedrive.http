@@ -1,0 +1,5 @@
+@host = https://api.pipedrive.com/v1/
+@api_token = 5911be61542bcaf17834360d478ed0a65af20c45
+
+GET {{host}}/deals?api_token={{api_token}}&status=won HTTP/1.1
+content-type: application/json
